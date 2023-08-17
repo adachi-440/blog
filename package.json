@@ -6,9 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint --dir src"
   },
   "dependencies": {
+    "microcms-js-sdk": "^2.5.0",
     "next": "13.4.16",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -19,6 +20,16 @@
     "@types/react-dom": "18.2.7",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.16",
+    "eslint-config-prettier": "9.0.0",
+    "prettier": "3.0.2",
     "typescript": "5.1.6"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "printWidth": 100
   }
 }
